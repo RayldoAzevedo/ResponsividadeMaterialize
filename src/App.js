@@ -9,7 +9,7 @@ function App() {
       <nav>
         <div className="nav-wrapper blue-grey darken-4 ">
           <a href="#!" className="brand-logo logo">&nbsp;&nbsp;
-            <img src="logoMat.jpg" width="80px" height="60px" />
+            <img src="materialize.png" width="80px" height="60px" />
           </a>
           <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">
@@ -317,7 +317,7 @@ function App() {
               <h5 className="white-text">CMP 1491</h5>
               <p className="grey-text text-lighten-4">Responsividade com Materialize</p>
             </div>
-            <div className="col m4 l3 s12">
+            <div className="col m4 l4 s12">
               <h5 className="white-text">Desenvolvimento</h5>
               <p className="grey-text text-lighten-4">Rayldo Azevedo e Estevão Sampaio</p>
             </div>
