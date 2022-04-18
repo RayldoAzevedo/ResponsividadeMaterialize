@@ -11,7 +11,7 @@ function App() {
       <nav>
         <div className="nav-wrapper blue-grey darken-4 ">
           <a href="#!" className="brand-logo logo">&nbsp;&nbsp;
-            <img src="materialize.png" width="80px" height="60px" />
+              Materialize
           </a>
           <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           <ul className="right hide-on-med-and-down">
