@@ -211,13 +211,13 @@ function App() {
                         'S'
                       ],
                       weekdaysShort: [
-                        'Sun',
-                        'Mon',
-                        'Tue',
-                        'Wed',
-                        'Thu',
-                        'Fri',
-                        'Sat'
+                        'Dom',
+                        'Seg',
+                        'Ter',
+                        'Qua',
+                        'Qui',
+                        'Sex',
+                        'Sab'
                       ]
                     },
                     isRTL: false,
