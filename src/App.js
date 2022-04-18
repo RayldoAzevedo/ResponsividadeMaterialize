@@ -50,7 +50,9 @@ function App() {
           <div className="col s12 m6 l3">
             <div className="card">
               <div className="card-image">
-                <img height="250px" src="html-css-js.jpg" />
+              <a href="https://www.w3schools.com/">
+                  <img height="250px" src="html-css-js.jpg"/>
+                </a>
                 <span className="card-title black-text">Front-End</span>
               </div>
               <div className="card-content">
@@ -65,6 +67,7 @@ function App() {
               <div className="card-image">
                 <a href="https://materializecss.com/about.html">
                   <img height="250px" src="materialize.jpg" />
+                  {/* https://www.w3schools.com/ */}
                 </a>
               </div>
               <div className="card-content">
@@ -304,7 +307,7 @@ function App() {
 
             </div>
             <div className="button col s12 md12 l12 ">
-              <button className="btn waves-effect waves-light" type="submit" name="action">Enviar
+              <button className="btn waves-effect waves-light radius" type="submit" name="action">Enviar
                 <i className="material-icons right">send</i>
               </button>
             </div>
