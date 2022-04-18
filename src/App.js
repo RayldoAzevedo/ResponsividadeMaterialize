@@ -313,19 +313,25 @@ function App() {
       <footer className="page-footer blue-grey darken-4">
         <div className="container">
           <div className="row">
-            <div className="col l6 s12">
-              <h5 className="white-text">Footer Content</h5>
-              <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <div className="col m4 l3 s12">
+              <h5 className="white-text">CMP 1491</h5>
+              <p className="grey-text text-lighten-4">Responsividade com Materialize</p>
             </div>
-            <div className="col l4 offset-l2 s12">
-              <h5 className="white-text">Links</h5>
+            <div className="col m4 l3 s12">
+              <h5 className="white-text">Desenvolvimento</h5>
+              <p className="grey-text text-lighten-4">Rayldo Azevedo e Estevão Sampaio</p>
+            </div>
+            <div className="col m4 l3 offset-l2 s12">
+              <a className="grey-text text-lighten-4" href='https://github.com/Rayzev/ResponsividadeMaterialize'>
+              <h5 className="white-text">Codigo: GitHub</h5>
+              </a>
             </div>
           </div>
         </div>
         <div className="footer-copyright">
           <div className="container">
             © 2022 Copyright Text
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a className="grey-text text-lighten-4 right" href="https://vercel.com/">Vercel</a>
           </div>
         </div>
       </footer>
