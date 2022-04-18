@@ -5,10 +5,11 @@ import 'materialize-css'
 import './App.css';
 
 function App() {
+
   return (
     <div className="">
 
-      <nav>
+      {/* <nav>
         <div className="nav-wrapper blue-grey darken-4 ">
           <a href="#!" className="brand-logo logo">&nbsp;&nbsp;
               Materialize
@@ -30,7 +31,41 @@ function App() {
         <li><a href="#Javascript">Javascript</a></li>
         <li><a href="#React">React</a></li>
         <li><a href="#Spring Boot">Spring Boot</a></li>
-      </ul>
+      </ul> */}
+      <div>
+        <nav class="nav-extended">
+          <div class="nav-wrapper blue-grey darken-4 ">
+            <a href="#" class="brand-logo">Materialize</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links" ><i class="material-icons">menu</i></a>
+            {/* visivel apenas tela large */}
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html">React</a></li>
+              <li><a href="badges.html">Spring-Boot</a></li>
+              <li><a href="collapsible.html">Material Ui</a></li>
+            </ul>
+
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab"><a href="#Html-Css-Js">Html-Css-Js</a></li>
+              <li class="tab"><a class="active" href="#React">React</a></li>
+              <li class="tab disabled"><a href="#Materialize">Materialize</a></li>
+              <li class="tab"><a href="#Spring-Boot">Spring-Boot</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-links">
+          <li><a href="#">React</a></li>
+          <li><a href="#">Spring-Boot</a></li>
+          <li><a href="#">Material Ui</a></li>
+        </ul>
+        {/* 
+        <div id="Html-Css-Js" class="col s12">Html-Css-Js</div>
+        <div id="React" class="col s12">React</div>
+        <div id="Materialize" class="col s12">Materialize</div>
+        <div id="Spring-Boot" class="col s12">Spring-Boot</div> */}
+      </div>
 
 
       {/* corpo */}
@@ -50,8 +85,8 @@ function App() {
           <div className="col s12 m6 l3">
             <div className="card">
               <div className="card-image">
-              <a href="https://www.w3schools.com/">
-                  <img height="250px" src="html-css-js.jpg"/>
+                <a href="https://www.w3schools.com/">
+                  <img height="250px" src="html-css-js.jpg" />
                 </a>
                 <span className="card-title black-text">Front-End</span>
               </div>
@@ -71,8 +106,8 @@ function App() {
                 </a>
               </div>
               <div className="card-content">
-                <p>Criado e projetado pelo Google, o Material Design é uma linguagem de design que combina os princípios clássicos do design de sucesso com inovação e tecnologia. 
-                  </p>
+                <p>Criado e projetado pelo Google, o Material Design é uma linguagem de design que combina os princípios clássicos do design de sucesso com inovação e tecnologia.
+                </p>
               </div>
             </div>
           </div>
@@ -341,7 +376,7 @@ function App() {
                 </div>
                 <div className='col s2 m2 l2'>
                   <li><a class="grey-text text-lighten-3" href="https://github.com/Rayzev"><FaGithub className='icon-size'></FaGithub></a></li>
-                  <li><a class="grey-text text-lighten-3 mouse" href="https://vercel.com/">Vercel</a></li>
+                  <li className=''><a class="grey-text text-lighten-3 vercel" href="https://vercel.com/">Vercel</a></li>
                 </div>
               </ul>
             </div>

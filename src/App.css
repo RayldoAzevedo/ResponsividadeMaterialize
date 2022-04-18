@@ -1,8 +1,16 @@
 body{
   background-color: rgb(210, 210, 210);
 }
+.vercel{  
+  margin-top: 15px;
+}
+.vercel:hover{
+  color: crimson !important;
+  font-weight: bold;
+}
 .icon-size{
   font-size: 2em;
+  margin: 5px;
 }
 .icon-size:hover{
   font-size: 2.2em;
@@ -66,4 +74,8 @@ body{
 }
 .radius{
   border-radius: 10px;
+}
+
+li{
+  font-weight: bold;
 }
