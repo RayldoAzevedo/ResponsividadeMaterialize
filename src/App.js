@@ -71,7 +71,8 @@ function App() {
                 </a>
               </div>
               <div className="card-content">
-                <p>Criado e projetado pelo Google, o Material Design é uma linguagem de design que combina os princípios clássicos do design de sucesso com inovação e tecnologia. O objetivo do Google é desenvolver um sistema de design que permita uma experiência de usuário unificada em todos os seus produtos em qualquer plataforma.</p>
+                <p>Criado e projetado pelo Google, o Material Design é uma linguagem de design que combina os princípios clássicos do design de sucesso com inovação e tecnologia. 
+                  </p>
               </div>
             </div>
           </div>
