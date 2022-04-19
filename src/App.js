@@ -8,7 +8,7 @@ import { Component } from 'react';
 export default class App extends Component {
 
   componentDidMount() {
-    const M = window.M
+    const M = Window.M
     document.addEventListener('DOMContentLoaded', function () {
       var elems = document.querySelector('.sidenav')
       var instances = M.Sidenav.init(elems, {})
