@@ -1,65 +1,41 @@
-import { Select, Icon, DatePicker, } from 'react-materialize'
+import { Select, Icon, DatePicker, Navbar, NavItem, Parallax } from 'react-materialize'
 import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa'
 
 import 'materialize-css'
-import './App.css';
-import { Component } from 'react';
+import './App.css'
+import { Component } from 'react'
 
 export default class App extends Component {
-
-  componentDidMount() {
-    const M = Window.M
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelector('.sidenav')
-      var instances = M.Sidenav.init(elems, {})
-      
-    })
-  }
+  
   render() {
     return (
-
       <div className="">
-        <div>
-          <nav className="nav-extended">
-            <div className="nav-wrapper blue-grey darken-4 ">
-              <a href="#" className="sidenav-trigger show-on-large" data-target="slide-out" ><i className="material-icons">menu</i></a>
-              <a href="#" className="brand-logo">Materialize</a>
-              {/* visivel apenas tela large */}
-              <ul id="nav-mobile" className="right hide-on-med-and-down">
-                <li><a href="sass.html">React</a></li>
-                <li><a href="badges.html">Spring-Boot</a></li>
-                <li><a href="collapsible.html">Material Ui</a></li>
-              </ul>
-
-            </div>
-            <div className="nav-content">
-              <ul className="tabs tabs-transparent">
-                <li className="tab"><a href="#Html-Css-Js">Html-Css-Js</a></li>
-                <li className="tab"><a className="active" href="#React">React</a></li>
-                <li className="tab disabled"><a href="#Materialize">Materialize</a></li>
-                <li className="tab"><a href="#Spring-Boot">Spring-Boot</a></li>
-              </ul>
-            </div>
-          </nav>
-
-          <ul className="sidenav" id="slide-out" name="sidenav">
-            <li>
-              <div className="user-view">
-                <div className="background">
-                  <img src="images/office.jpg" />
-                </div>
-                <a href="#user"><img className="circle" src="" /></a>
-                <a href="#name"><span className="white-text name">Ray Azevedo</span></a>
-                <a href="#email"><span className="white-text email">rayldoazevedo@gmail.com</span></a>
-              </div>
-            </li>
-            <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">React</a></li>
-            <li><div className="divider"></div></li>
-            <li><a className="subheader">Materialize</a></li>
-            <li><a className="waves-effect" href="#!">Spring-Boot</a></li>
-          </ul>
-        </div>
+        
+        <Navbar
+          alignLinks="right"
+          brand={
+            <a className="brand-logo" href="#">
+              &nbsp;&nbsp;&nbsp;&nbsp;Materialize
+            </a>
+          }
+          id="mobile-nav"
+          menuIcon={<Icon>menu</Icon>}
+          options={{
+            draggable: true,
+            edge: 'left',
+            inDuration: 250,
+            onCloseEnd: null,
+            onCloseStart: null,
+            onOpenEnd: null,
+            onOpenStart: null,
+            outDuration: 200,
+            preventScrolling: true,
+          }}
+          className="blue-grey darken-4 "
+        >
+          <NavItem href="">React</NavItem>
+          <NavItem href="components.html">Spring Boot</NavItem>
+        </Navbar>
 
         {/* ********************************************************************************* */}
         {/* corpo */}
@@ -74,10 +50,9 @@ export default class App extends Component {
         {/* <!-- ADICIONANDO UM CONTAINER --> */}
         <div className="container">
           {/* <!-- ADICIONANDO UMA LINHA --> */}
-          <div className="row">
-
+          <div className="row" >
             <div className="col s12 m6 l3">
-              <div className="card">
+              <div className="card ">
                 <div className="card-image">
                   <a href="https://www.w3schools.com/">
                     <img height="250px" src="html-css-js.jpg" />
@@ -85,8 +60,11 @@ export default class App extends Component {
                   <span className="card-title black-text">Front-End</span>
                 </div>
                 <div className="card-content">
-                  <p>A base do Desenvolvimento Web sendo HTML para estruturar as páginas,
-                    CSS para estilização e Javascript para adicionar interarividade.</p>
+                  <p>
+                    A base do Desenvolvimento Web sendo HTML para estruturar as
+                    páginas, CSS para estilização e Javascript para adicionar
+                    interarividade.
+                  </p>
                 </div>
               </div>
             </div>
@@ -100,7 +78,10 @@ export default class App extends Component {
                   </a>
                 </div>
                 <div className="card-content">
-                  <p>Criado e projetado pelo Google, o Material Design é uma linguagem de design que combina os princípios clássicos do design de sucesso com inovação e tecnologia.
+                  <p>
+                    Criado e projetado pelo Google, o Material Design é uma
+                    linguagem de design que combina os princípios clássicos do
+                    design de sucesso com inovação e tecnologia.
                   </p>
                 </div>
               </div>
@@ -115,7 +96,11 @@ export default class App extends Component {
                   </a>
                 </div>
                 <div className="card-content">
-                  <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. Utiliza de tecnologias como HTML, CSS e JavaScript.</p>
+                  <p>
+                    O React é uma biblioteca JavaScript de código aberto com
+                    foco em criar interfaces de usuário em páginas web. Utiliza
+                    de tecnologias como HTML, CSS e JavaScript.
+                  </p>
                 </div>
               </div>
             </div>
@@ -128,11 +113,15 @@ export default class App extends Component {
                   </a>
                 </div>
                 <div className="card-content">
-                  <p>O Spring é um framework open source para a plataforma Java.". Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle (IoC) e injeção de dependência.</p>
+                  <p>
+                    O Spring é um framework open source para a plataforma
+                    Java.". Trata-se de um framework não intrusivo, baseado nos
+                    padrões de projeto inversão de controle (IoC) e injeção de
+                    dependência.
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
@@ -146,12 +135,10 @@ export default class App extends Component {
           </div>
         </div>
 
-
         {/* <!-- formulario --> */}
         <div className="row container">
           <div className="card darken-1">
-            <form action="" >
-
+            <form action="">
               <div className="row">
                 <div className="input-field col s12 m6 l6">
                   <i className="material-icons prefix">account_circle</i>
@@ -166,12 +153,12 @@ export default class App extends Component {
               </div>
 
               <div className="row">
-                <div className="input-field col s12 m6 l5">
+                <div className="input-field col s12 m6 l6">
                   <i className="material-icons prefix">recent_actors</i>
                   <input id="icon_cpf" type="text" className="validate" />
                   <label for="icon_cpf">CPF</label>
                 </div>
-                <div className="input-field col s12 m6 l5 offset-l2">
+                <div className="input-field col s12 m6 l6">
                   <i className="material-icons prefix">contact_phone</i>
                   <input id="icon_phone" type="tel" className="validate" />
                   <label for="icon_phone">Telefone</label>
@@ -209,7 +196,7 @@ export default class App extends Component {
                           'Setembro',
                           'Outubro',
                           'Novembro',
-                          'Dezembro'
+                          'Dezembro',
                         ],
                         monthsShort: [
                           'Jan',
@@ -223,7 +210,7 @@ export default class App extends Component {
                           'Set',
                           'Out',
                           'Nov',
-                          'Dez'
+                          'Dez',
                         ],
                         nextMonth: '›',
                         previousMonth: '‹',
@@ -234,17 +221,9 @@ export default class App extends Component {
                           'Quarta',
                           'Quinta',
                           'Sexta',
-                          'Sábado'
+                          'Sábado',
                         ],
-                        weekdaysAbbrev: [
-                          'D',
-                          'S',
-                          'T',
-                          'Q',
-                          'Q',
-                          'S',
-                          'S'
-                        ],
+                        weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
                         weekdaysShort: [
                           'Dom',
                           'Seg',
@@ -252,8 +231,8 @@ export default class App extends Component {
                           'Qua',
                           'Qui',
                           'Sex',
-                          'Sab'
-                        ]
+                          'Sab',
+                        ],
                       },
                       isRTL: false,
                       maxDate: null,
@@ -267,7 +246,7 @@ export default class App extends Component {
                       showClearBtn: false,
                       showDaysInNextAndPreviousMonths: false,
                       showMonthAfterYear: false,
-                      yearRange: 10
+                      yearRange: 10,
                     }}
                   />
                 </div>
@@ -292,12 +271,14 @@ export default class App extends Component {
                         onCloseStart: null,
                         onOpenEnd: null,
                         onOpenStart: null,
-                        outDuration: 250
-                      }
+                        outDuration: 250,
+                      },
                     }}
-                    value="">
-
-                    <option value="" disabled selected>Sexo</option>
+                    value=""
+                  >
+                    <option value="" disabled selected>
+                      Sexo
+                    </option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                   </Select>
@@ -322,22 +303,29 @@ export default class App extends Component {
                         onCloseStart: null,
                         onOpenEnd: null,
                         onOpenStart: null,
-                        outDuration: 250
-                      }
+                        outDuration: 250,
+                      },
                     }}
-                    value="">
-                    <option value="" disabled selected>Curso</option>
+                    value=""
+                  >
+                    <option value="" disabled selected>
+                      Curso
+                    </option>
                     <option value="hcj">HTML,CSS e JavaScript</option>
-                    <option value="frm">Front-End com React + Materialize</option>
+                    <option value="frm">
+                      Front-End com React + Materialize
+                    </option>
                     <option value="bsb">Back-end com SpringBoot</option>
                   </Select>
-
-
                 </div>
-
               </div>
               <div className="button col s12 md12 l12 ">
-                <button className="btn waves-effect waves-light radius" type="submit" name="action">Enviar
+                <button
+                  className="btn waves-effect waves-light radius"
+                  type="submit"
+                  name="action"
+                >
+                  Enviar
                   <i className="material-icons right">send</i>
                 </button>
               </div>
@@ -350,40 +338,74 @@ export default class App extends Component {
             <div className="row">
               <div className="col m4 l2 s12">
                 <h5 className="white-text">CMP 1491</h5>
-                <p className="grey-text text-lighten-4">Responsividade com Materialize</p>
+                <p className="grey-text text-lighten-4">
+                  Responsividade com Materialize
+                </p>
               </div>
               <div className="col m4 l4 s12">
                 <h5 className="white-text">Desenvolvimento</h5>
-                <p className="grey-text text-lighten-4">Rayldo Azevedo e Estevão Sampaio</p>
+                <p className="grey-text text-lighten-4">
+                  Rayldo Azevedo e Estevão Sampaio
+                </p>
               </div>
               <div className="col m4 l2  s12">
-                <a className="grey-text text-lighten-4" href='https://github.com/Rayzev/ResponsividadeMaterialize'>
-                  <h5 className="white-text mouse">Código disponível no GitHub</h5>
+                <a
+                  className="grey-text text-lighten-4"
+                  href="https://github.com/Rayzev/ResponsividadeMaterialize"
+                >
+                  <h5 className="white-text mouse">
+                    Código disponível no GitHub
+                  </h5>
                 </a>
               </div>
               <div class="col s4 l4 s12">
                 <h5 class="white-text">Links de Contato</h5>
                 <ul>
-                  <div className='col s2 m2 l2'>
-                    <li ><a class="grey-text text-lighten-3" href="https://www.instagram.com/rayrayazevedo/" ><FaInstagram className='icon-size'></FaInstagram></a></li>
-                    <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/rayldoazevedo"><FaFacebook className='icon-size'></FaFacebook></a></li>
+                  <div className="col s2 m2 l2">
+                    <li>
+                      <a
+                        class="grey-text text-lighten-3"
+                        href="https://www.instagram.com/rayrayazevedo/"
+                      >
+                        <FaInstagram className="icon-size"></FaInstagram>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="grey-text text-lighten-3"
+                        href="https://www.facebook.com/rayldoazevedo"
+                      >
+                        <FaFacebook className="icon-size"></FaFacebook>
+                      </a>
+                    </li>
                   </div>
-                  <div className='col s2 m2 l2'>
-                    <li><a class="grey-text text-lighten-3" href="https://github.com/Rayzev"><FaGithub className='icon-size'></FaGithub></a></li>
-                    <li className=''><a class="grey-text text-lighten-3 vercel" href="https://vercel.com/">Vercel</a></li>
+                  <div className="col s2 m2 l2">
+                    <li>
+                      <a
+                        class="grey-text text-lighten-3"
+                        href="https://github.com/Rayzev"
+                      >
+                        <FaGithub className="icon-size"></FaGithub>
+                      </a>
+                    </li>
+                    <li className="">
+                      <a
+                        class="grey-text text-lighten-3 vercel"
+                        href="https://vercel.com/"
+                      >
+                        Vercel
+                      </a>
+                    </li>
                   </div>
                 </ul>
               </div>
             </div>
           </div>
           <div className="footer-copyright">
-            <div className="container">
-              © 2022 Copyright Text
-            </div>
+            <div className="container">© 2022 Copyright Text</div>
           </div>
         </footer>
-      </div >
+      </div>
     )
   }
 }
-
