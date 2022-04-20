@@ -15,7 +15,7 @@ export default class App extends Component {
           alignLinks="right"
           brand={
             <a className="brand-logo" href="#">
-              &nbsp;&nbsp;&nbsp;&nbsp;Materialize
+              &nbsp;&nbsp;&nbsp;&nbsp;CMP - 1491
             </a>
           }
           id="mobile-nav"
