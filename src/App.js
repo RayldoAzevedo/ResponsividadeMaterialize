@@ -33,8 +33,10 @@ export default class App extends Component {
           }}
           className="blue-grey darken-4 "
         >
-          <NavItem href="">React</NavItem>
-          <NavItem href="components.html">Spring Boot</NavItem>
+          <NavItem href="https://pt-br.reactjs.org/">React</NavItem>
+          <NavItem href="https://spring.io/projects/spring-boot">Spring Boot</NavItem>
+          <NavItem href="https://materializecss.com/getting-started.html">Materialize</NavItem>
+          <NavItem href="http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome">React-Materialize</NavItem>
         </Navbar>
 
         {/* ********************************************************************************* */}
