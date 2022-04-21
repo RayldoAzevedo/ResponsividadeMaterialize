@@ -6,48 +6,51 @@ import './App.css'
 import { Component } from 'react'
 
 export default class App extends Component {
-  
+  componentDidMount() {
+    const M = window.M
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {});
+    // $('.sidenav').sidenav();
+  }
   render() {
     return (
-      <div className="">
-        
-        <Navbar
-          alignLinks="right"
-          brand={
+      <div className="">        
+        <nav>
+          <div className="nav-wrapper">
+            <a href="#" className="brand-logo">Materialize</a>
+            <a href="#" data-target="slide" className="sidenav-trigger show-large" ><i className="material-icons">menu</i></a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
+              <li><a href="https://pt-br.reactjs.org">React</a></li>
+              <li><a href="https://spring.io/projects/spring-boot">Spring-Boot</a></li>
+              <li><a href="https://materializecss.com/getting-started.html">Materialize</a></li>
+              <li><a href="http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome">React-Materialize</a></li>
+              </ul>
+            </div>
+        </nav>
 
-            <a className="brand-logo logo-title margin-left hide-on-small-only" href="#">
-              &nbsp;&nbsp;&nbsp;&nbsp;
-              Materialize
-              
-             <ul className="tabs ">
-                 <li className="tab menu-nav"><a className="active" href="https://pt-br.reactjs.org/">React</a></li>
-                 <li className="tab menu-nav"><a className="active" href="https://spring.io/projects/spring-boot">Spring-Boot</a></li>
-                 <li className="tab menu-nav"><a className="active" href="https://materializecss.com/getting-started.html">Materialize</a></li>
-                 <li className="tab menu-nav"><a className="active" href="http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome">React-Materialize</a></li>
-             </ul>
+        <ul id="slide" className="sidenav">
+            <li>
+              <div className="user-view">
+                <div className="background">
+                  <img src="bgCompScience.jpg"/>
+                </div>
+                <a href="#user"><img className="circle" src="avatar.png"/></a>
+                <a href="#name"><span className="white-text name">Fulano de Tal</span></a>
+                <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
+              </div>
+            </li>
 
-            </a>        
-          }
-          id="mobile-nav"
-          menuIcon={<Icon>menu</Icon>}
-          options={{
-            draggable: true,
-            edge: 'left',
-            inDuration: 250,
-            onCloseEnd: null,
-            onCloseStart: null,
-            onOpenEnd: null,
-            onOpenStart: null,
-            outDuration: 200,
-            preventScrolling: true,
-          }}
-          className="blue-grey darken-4 ">
-            
-          <NavItem href="https://pt-br.reactjs.org/">React</NavItem>
-          <NavItem href="https://spring.io/projects/spring-boot">Spring Boot</NavItem>
-          <NavItem href="https://materializecss.com/getting-started.html">Materialize</NavItem>
-          <NavItem href="http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome">React-Materialize</NavItem>
-        </Navbar>
+            <li><a href="#!"><i className="material-icons ">cloud</i><span className=''>Meu Aprendizado</span></a></li>
+            <li><a href="https://pt-br.reactjs.org">React</a></li>
+            <li><a href="https://spring.io/projects/spring-boot">Spring-Boot</a></li>
+            <li><a href="https://materializecss.com/getting-started.html">Materialize</a></li>
+            <li><a href="http://react-materialize.github.io/react-materialize/?path=/story/react-materialize--welcome">React-Materialize</a></li>
+
+            <li><div className="divider"></div></li>
+            <li><a className="subheader">Instrutores</a></li>
+            <li><a className="waves-effect" href="#!">Rayldo Azevedo</a></li>
+            <li><a className="waves-effect" href="#!">Estevão Sampaio</a></li>
+        </ul>
         
               {/* ********************************************************************************* */}
               {/* corpo */}
