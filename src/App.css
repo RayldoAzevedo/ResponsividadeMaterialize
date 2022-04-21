@@ -1,3 +1,28 @@
+body{
+  background-color: rgb(210, 210, 210);
+}
+.vercel{  
+  margin-top: 15px;
+}
+.vercel:hover{
+  color: crimson !important;
+  font-weight: bold;
+}
+.icon-size{
+  font-size: 2em;
+  margin: 5px;
+}
+.icon-size:hover{
+  font-size: 2.2em;
+}
+.mouse{
+  color: white;
+}
+.mouse:hover{
+  color: crimson !important;
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
@@ -23,6 +48,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.margin-left{
+  margin-left: 50px;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +64,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.logo{
+  color: rgb(253, 175, 175) !important;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  border-radius: 10px;
+}
+.radius{
+  border-radius: 10px;
+}
+
+li{
+  font-weight: bold;
+}
+
+
+.menu-nav{
+  color: indianred !important;
+}
+
+.logo-title{
+  color: indianred !important;
+  font-weight: bold;
+  font-size: large;
+}
+
+.texto-base{
+  margin-top: 40px;
 }
