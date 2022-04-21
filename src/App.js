@@ -17,7 +17,7 @@ export default class App extends Component {
       <div className="">        
         <nav>
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo">Materialize</a>
+            <a href="#" className="brand-logo logo-title">Materialize</a>
             <a href="#" data-target="slide" className="sidenav-trigger show-large" ><i className="material-icons">menu</i></a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li><a href="https://pt-br.reactjs.org">React</a></li>
