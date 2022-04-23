@@ -67,7 +67,7 @@ export default class App extends Component {
                 {/* <!-- ADICIONANDO UMA LINHA --> */}
                 <div className="row" >
                   <div className="col s12 m6 l3">
-                    <div className="card large">
+                    <div className="card meddium">
                       <div className="card-image">
                         <a href="https://www.w3schools.com/">
                           <img height="250px" src="html-css-js.jpg" />
@@ -85,7 +85,7 @@ export default class App extends Component {
                   </div>
 
                   <div className="col s12 m6 l3">
-                    <div className="card large">
+                    <div className="card meddium">
                       <div className="card-image">
                         <a href="https://materializecss.com/about.html">
                           <img height="250px" src="materialize.jpg" />
@@ -103,7 +103,7 @@ export default class App extends Component {
                   </div>
 
                   <div className="col s12 m6 l3">
-                    <div className="card large">
+                    <div className="card meddium">
                       <div className="card-image">
                         <a href="https://pt-br.reactjs.org/">
                           <img height="250px" src="react.png" />
@@ -120,7 +120,7 @@ export default class App extends Component {
                     </div>
                   </div>
                   <div className="col s12 m6 l3">
-                    <div className="card large">
+                    <div className="card meddium">
                       <div className="card-image">
                         <a href="https://spring.io/projects/spring-boot">
                           <img height="250px" src="spring.jpg" />
